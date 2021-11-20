@@ -1,0 +1,23 @@
+$ vi sravani.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ cat sravani.sh
+
+#!/bin/bash
+# file-poke - tell us stuff about files
+files= 'ls'
+for i in $files
+do
+        echo -n "$i"
+        grep $i $i
+done
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ chmod u+x sravani.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ ./sravani.sh
+README.md  sravani.sh
+
+mypc@DESKTOP-HQPJ5
