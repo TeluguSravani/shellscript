@@ -1,0 +1,24 @@
+$ vi filetests.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~ (master)
+$ cat filetests.sh
+#!/bin/bash
+count=0
+for i in *; do
+        if test -x $i; then
+                count='expr $count + 1'
+        fi
+done
+echo Total of $count files executable.
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~ (master)
+$ ./filetests.sh
+./filetests.sh: line 4: test: 3D: binary operator expected
+./filetests.sh: line 4: test: Application: binary operator expected
+./filetests.sh: line 4: test: Local: binary operator expected
+./filetests.sh: line 4: test: My: binary operator expected
+./filetests.sh: line 4: test: Saved: binary operator expected
+./filetests.sh: line 4: test: Start: binary operator expected
+./filetests.sh: line 4: test: upper: binary operator expected
+Total of expr $count + 1 files executable.
+
