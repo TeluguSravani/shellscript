@@ -1,0 +1,26 @@
+$ vi integertest.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ cat integertest.sh
+#!/bin/bash
+smallest=10000
+for i in 5 8 19 8 7 3; do
+        if test $i -it $smallest; then
+                smallest=$i
+        fi
+done
+
+echo $smallest
+
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ ./integertest.sh
+./integertest.sh: line 4: test: -it: binary operator expected
+./integertest.sh: line 4: test: -it: binary operator expected
+./integertest.sh: line 4: test: -it: binary operator expected
+./integertest.sh: line 4: test: -it: binary operator expected
+./integertest.sh: line 4: test: -it: binary operator expected
+./integertest.sh: line 4: test: -it: binary operator expected
+10000
+
