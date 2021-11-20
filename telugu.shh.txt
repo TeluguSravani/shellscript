@@ -1,0 +1,32 @@
+$ cat telugu.sh
+#!/bin/bash
+# timestable - print out a multiplication table
+for i in 1 2 3
+do
+for j in 1 2 3
+do
+        value='expr $i\* $j'
+        echo -n"$value"
+done
+echo
+done
+
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ chomd u+x telugu.sh
+bash: chomd: command not found
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ ./telugu.sh
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
