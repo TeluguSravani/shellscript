@@ -1,0 +1,22 @@
+$ vi forloop.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ cat forloop.sh
+#!/bin/bash
+ if grep "UNIX" myfile >/dev/null
+ then
+         echo UNIX occurs in myfile
+ else
+         echo No!
+         echo UNIX does not occur in myfile
+ fi
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ chmod u+x forloop.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ ./forloop.sh
+grep: myfile: No such file or directory
+No!
+UNIX does not occur in myfile
+
