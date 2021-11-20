@@ -1,0 +1,20 @@
+$ vi useofclone.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~ (master)
+$ cat useofclone.sh
+#!/bin/bash
+ if grep unix myfiles
+ then
+         :
+ else
+         echo "sorry, unix was not found"
+ fi
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~ (master)
+$ ./useofclone.sh
+grep: myfiles: No such file or directory
+sorry, unix was not found
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~ (master)
+$
