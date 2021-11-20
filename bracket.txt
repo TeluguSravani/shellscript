@@ -1,0 +1,17 @@
+$ vi brackets.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ cat brackets.sh
+#!/bin/bash
+smallest=10000
+for i in 5 8 19 8 7 3;do
+        if [ $i -lt $smallest ] ; then
+                smallest=$i
+        fi
+done
+echo $smallest
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/shellscript (master)
+$ ./brackets.sh
+3
