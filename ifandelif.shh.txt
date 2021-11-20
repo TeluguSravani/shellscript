@@ -1,0 +1,23 @@
+$ vi ifandelif.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ cat ifandelif.sh
+ #!/bin/bash
+ if grep "UNIX" myfile >/dev/null
+ then
+         echo "UNIX occurs in file"
+ elif grep "DOS" myfile >/dev/null
+         then
+                 echo "unix does not occurs, but DOS does"
+         else
+                 echo "Nobody is there"
+ fi
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ chmod u+x ifandelif.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ ./ifandelif.sh
+grep: myfile: No such file or directory
+grep: myfile: No such file or directory
+Nobody is there
