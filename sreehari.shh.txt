@@ -1,0 +1,18 @@
+$ vi sreehari.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ cat sreehari.sh
+#!/bin/bash
+# file-poke - tell us stuff about files
+for i in *;do
+        echo -n "$i "
+        grep $i $i
+done
+
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ chmod u+x sreehari.sh
+
+mypc@DESKTOP-HQPJ5FT MINGW64 ~/Desktop/commands/shellscript (main)
+$ ./sreehari.sh
+README.md sravani.sh sreehari.sh
